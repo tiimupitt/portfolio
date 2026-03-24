@@ -29,7 +29,8 @@
 	--container-64: calc(var(--container) * 64);
 
 	/* styles */
-	font-family: monospace;
+
+	font-size: 10px;
 	line-height: 1;
 
 	p, h1, h2, h3, h4, h5 {
