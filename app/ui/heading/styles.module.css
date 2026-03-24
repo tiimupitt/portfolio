@@ -1,0 +1,46 @@
+.heading {
+	font-weight: 800;
+	text-transform: uppercase;
+	font-variation-settings: 'wdth' 120;
+
+	&:hover {
+		span {
+			font-variation-settings: 'wdth' 90;
+		}
+	
+	}
+
+	span {
+		transition: font-variation-settings 0.5s ease-in-out;
+
+		&:hover {
+			font-variation-settings: 'wdth' 150;
+		}
+	}
+
+}
+
+.h1 {
+	font-size: var(--spacing-8);
+	composes: heading;
+}
+
+.h2 {
+	font-size: var(--spacing-7);
+	composes: heading;
+}
+
+.h3 {
+	font-size: var(--spacing-6);
+	composes: heading;
+}
+
+.h4 {
+	font-size: var(--spacing-5);
+	composes: heading;
+}
+
+.h5 {
+	font-size: var(--spacing-4);
+	composes: heading;
+}

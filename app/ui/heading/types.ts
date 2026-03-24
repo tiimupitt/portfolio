@@ -1,0 +1,12 @@
+export enum HeadingSize {
+  H1 = 'H1',
+  H2 = 'H2',
+  H3 = 'H3',
+  H4 = 'H4',
+  H5 = 'H5',
+}
+
+export type HeadingProps = {
+  children: string
+  size: HeadingSize
+}
