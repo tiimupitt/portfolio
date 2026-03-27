@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import WoodImage from '@/app/image/wood.jpg'
 import styles from '@/app/styles.module.css'
-import CurriculumVitae from '@/app/ui/curriculum-vitae'
+import FilePile from '@/app/ui/file-pile'
 import Sidebar from '@/app/ui/sidebar'
 
 export default function Page() {
@@ -12,9 +12,7 @@ export default function Page() {
         <Sidebar />
         <div className={styles.wrapper}>
           <Image alt="wood background" className={styles.wood} src={WoodImage} />
-          <div className={styles.content}>
-            <CurriculumVitae />
-          </div>
+          <FilePile />
         </div>
       </main>
     </div>

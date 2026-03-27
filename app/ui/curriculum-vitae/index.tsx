@@ -1,15 +1,17 @@
 import { FunctionComponent } from 'react'
 
+import { CurriculumVitaeProps } from '@/app/ui/curriculum-vitae/types'
 import ExpirenceItem from '@/app/ui/experience-item'
 import File from '@/app/ui/file'
+import { TabPosition } from '@/app/ui/file/types'
 import Heading from '@/app/ui/heading'
 import { HeadingSize } from '@/app/ui/heading/types'
 
 import styles from './styles.module.css'
 
-const CurriculumVitae: FunctionComponent = () => {
+const CurriculumVitae: FunctionComponent<CurriculumVitaeProps> = (props) => {
   return (
-    <File title="CV">
+    <File {...props} tabPosition={TabPosition.LEFT} title="CV">
       <ul className={styles.container}>
         <Heading size={HeadingSize.H2}>About</Heading>
         <p>I am a technically minded creative professional with a broad spectrum of skills in computing. I coded audio software at university and have been working professionally as a software engineer since with a focus on frontend.</p>

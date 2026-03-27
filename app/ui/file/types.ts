@@ -1,8 +1,15 @@
-import { ReactRef } from '@gsap/react'
-import { ReactNode } from 'react'
+import { MouseEventHandler, ReactNode, RefObject } from 'react'
+
+export enum TabPosition {
+  LEFT = 'LEFT',
+  RIGHT = 'RIGHT',
+}
 
 export type FileProps = {
   children: ReactNode
-  ref?: ReactRef
+  isTabClickable: boolean
+  onTabClick: MouseEventHandler<HTMLButtonElement>
+  ref: RefObject<HTMLDivElement | null>
+  tabPosition: TabPosition
   title: string
 }
