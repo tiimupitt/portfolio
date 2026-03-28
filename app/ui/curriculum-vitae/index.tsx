@@ -13,9 +13,9 @@ const CurriculumVitae: FunctionComponent<CurriculumVitaeProps> = (props) => {
   return (
     <File {...props} tabPosition={TabPosition.LEFT} title="CV">
       <ul className={styles.container}>
-        <Heading size={HeadingSize.H2}>About</Heading>
+        <Heading size={HeadingSize.H3}>About</Heading>
         <p>I am a technically minded creative professional with a broad spectrum of skills in computing. I coded audio software at university and have been working professionally as a software engineer since with a focus on frontend.</p>
-        <Heading size={HeadingSize.H2}>Experience</Heading>
+        <Heading size={HeadingSize.H3}>Experience</Heading>
         <ExpirenceItem
           date="October 2022 — Present"
           description={{
@@ -44,7 +44,7 @@ const CurriculumVitae: FunctionComponent<CurriculumVitaeProps> = (props) => {
           subtitle="Frontend Developer"
           title="Boogi"
         />
-        <Heading size={HeadingSize.H2}>Education</Heading>
+        <Heading size={HeadingSize.H3}>Education</Heading>
         <ExpirenceItem
           date="September 2020 — January 2021"
           description={{
@@ -69,7 +69,7 @@ const CurriculumVitae: FunctionComponent<CurriculumVitaeProps> = (props) => {
           subtitle="Degree"
           title="Bath Spa University"
         />
-        <Heading size={HeadingSize.H2}>Awards</Heading>
+        <Heading size={HeadingSize.H3}>Awards</Heading>
         <ExpirenceItem
           date="1st year"
           description={{
@@ -86,7 +86,7 @@ const CurriculumVitae: FunctionComponent<CurriculumVitaeProps> = (props) => {
           subtitle="Bath Spa University"
           title="Grade record"
         />
-        <Heading size={HeadingSize.H2}>Volunteering</Heading>
+        <Heading size={HeadingSize.H3}>Volunteering</Heading>
         <ExpirenceItem
           subtitle="BMEYPP"
           title="Young people's mentor"

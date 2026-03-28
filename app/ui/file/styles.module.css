@@ -151,9 +151,13 @@
 	flex-direction: column;
 	gap: var(--spacing-7);
 	width: 100%;
-	padding: var(--spacing-7);
+	padding: var(--spacing-6);
 	overflow-y: scroll;
 	scrollbar-color:  var(--color-green-mid) transparent;
 	overflow-wrap: break-word;
+
+	@media screen and (width >= 1300px) {
+		padding: var(--spacing-7);
+	}
 }
 
