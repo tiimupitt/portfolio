@@ -9,7 +9,7 @@ export type FileProps = {
   children: ReactNode
   isTabClickable: boolean
   onTabClick: MouseEventHandler<HTMLButtonElement>
-  ref: RefObject<HTMLDivElement | null>
+  ref?: RefObject<HTMLDivElement | null>
   tabPosition: TabPosition
   title: string
 }
