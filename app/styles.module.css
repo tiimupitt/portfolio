@@ -19,6 +19,8 @@
 
 .wrapper {
 	position: relative;
+	display: flex;
+	gap: var(--spacing-7);
 	width: 100%;
 	height: 100svh;
 	padding: var(--spacing-7);
@@ -26,7 +28,7 @@
 	overflow: hidden;
 
 	@media screen and (width >= 1300px) {
-		padding: var(--spacing-8);
+		padding: var(--spacing-8) var(--spacing-6) var(--spacing-8) var(--spacing-8);
 		box-shadow: inset var(--spacing-5) 0 var(--spacing-3) calc(var(--spacing-4) * -1) var(--color-black-translucent);	
 	}
 }

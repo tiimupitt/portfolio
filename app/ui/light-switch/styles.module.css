@@ -1,0 +1,72 @@
+.blackout {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: var(--z-index-blackout);
+    display: none;
+    width: 300vw;
+    height: 300vh;
+    margin: -150vh 0 0 -150vw;
+    background: radial-gradient(circle at center, transparent, transparent 15rem, #f7af66a4 20rem, #16100A 25rem);
+    filter: blur(30px);
+    pointer-events: none;
+
+    @media screen and (width >= 1300px) {
+		display: initial;
+	}
+}
+
+.wrapper {
+    position: relative;
+    top: -50rem;
+    z-index: var(--z-index-light-switch);
+    display: none;
+    flex-direction: column;
+    width: var(--spacing-8);
+    transition: filter 1s ease-in-out;
+       
+    @media screen and (width >= 1300px) {
+		  display: flex;
+	}
+}
+
+.wrapper-dark {
+    composes: wrapper;
+    filter: 
+        drop-shadow(0 var(--spacing-2) var(--spacing-5) var(--color-black-translucent))
+        drop-shadow(0 var(--spacing-2) var(--spacing-5) var(--color-green-light-translucent))
+        brightness(1.5)
+        sepia(1)
+        hue-rotate(45deg);
+}
+
+.wrapper-light {
+    composes: wrapper;
+    filter: drop-shadow(0 var(--spacing-2) var(--spacing-5) var(--color-black-translucent));
+}
+
+.beads {
+    display: flex;
+    flex-direction: column;
+    
+    img {
+        width: 100%;
+        height: auto;
+
+        &:nth-child(even) {
+            transform: scaleX(-1);
+        }
+    }
+}
+
+.handle {
+    width: 100%;
+    border-width: 0;
+    background: none;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

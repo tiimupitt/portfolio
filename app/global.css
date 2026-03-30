@@ -43,6 +43,8 @@
 	--z-index-file-tab-curve: 3;
 	--z-index-file-tab-fade: 4;
 	--z-index-embossed-leather: 5;
+	--z-index-blackout: 6;
+	--z-index-light-switch: 7;
 
 	/* styles */
 	font-size: 8px;
